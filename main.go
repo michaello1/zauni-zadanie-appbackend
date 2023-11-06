@@ -283,12 +283,12 @@ func printInfo() {
 	listenport = getEnv("LISTEN_PORT", LISTEN_PORT)
 	version := getEnv("VERSION", VERSION)
 
-	fmt.Printf("version %s", version)
-	fmt.Printf("serving on port %s...", listenport)
+	fmt.Printf("version %s\n", version)
+	fmt.Printf("serving on port %s...\n", listenport)
 	fmt.Println("tests:")
-	fmt.Printf("curl -s localhost:%s/ok", listenport)
-	fmt.Printf("curl -s localhost:%s/platforms", listenport)
-	fmt.Printf("curl -s localhost:%s/platforms | jq .", listenport)
+	fmt.Printf("curl -s localhost:%s/ok\n", listenport)
+	fmt.Printf("curl -s localhost:%s/platforms\n", listenport)
+	fmt.Printf("curl -s localhost:%s/platforms | jq .\n", listenport)
 }
 
 func main() {
